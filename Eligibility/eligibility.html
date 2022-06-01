@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Eligibility Check</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-warning">
+	<div>
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  	<div class="container">
+			<ul class="nav nav-pills nav-justified">
+			  <li role="presentation"><a href="index.html">Home</a></li>
+			  <li role="presentation"><a href="aboutUs.html">About Us</a></li>
+			  <li role="presentation"><a href="contactUs.html">Contact Us</a></li>
+			  <li role="presentation" class="active"><a href="personalDetails.html">Check Eligibility</a></li>
+			</ul>
+		</div>
+	</nav>
+</div>
+	<br><br><br><br><br>
+		<div>
+			<h3>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Enter Criteria Details here: </h3>
+			<br><br>
+			<form class="form-horizontal" action="check.php" method="POST">
+			  <div class="form-group">
+			    <label class="col-sm-3 control-label">Physics</label>
+			    <div class="col-sm-4">
+			      <input name="physics" type="text" class="form-control" placeholder="Marks out of 100">
+			    </div>
+			  </div>
+			  <br>
+			  <div class="form-group">
+			    <label class="col-sm-3 control-label">Chemistry</label>
+			    <div class="col-sm-4">
+			      <input name="chemistry" type="text" class="form-control" placeholder="Marks out of 100">
+			    </div>
+			  </div>
+			  <br>
+			  <div class="form-group">
+			    <label class="col-sm-3 control-label">Biology</label>
+			    <div class="col-sm-4">
+			      <input name="biology" type="text" class="form-control" placeholder="Marks out of 100">
+			    </div>
+			  </div>
+			  <br>
+			  <div class="form-group">
+			    <label class="col-sm-3 control-label">Minority</label>
+			    <div class="col-sm-4">
+					<label class="radio-inline">
+						<input type="radio" name="minority" id="inlineRadio1" value="yes">Yes
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="minority" id="inlineRadio2" value="no" checked="Yes">No
+					</label>
+			    </div>
+			  </div>
+			  <br>
+			  <div class="form-group">
+			    <div class="col-sm-offset-3 col-sm-10">
+			      <input type="submit" name="submit" value="submit">
+			    </div>
+			  </div>
+		</div>
+	</form>
+</body>
+</html>
